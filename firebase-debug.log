@@ -1,0 +1,126 @@
+[debug] [2026-11-02T04:17:05.611Z] ----------------------------------------------------------------------
+[debug] [2026-11-02T04:17:05.618Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Vatsal\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project vpatel-portfolio
+[debug] [2026-11-02T04:17:05.619Z] CLI Version:   15.6.0
+[debug] [2026-11-02T04:17:05.619Z] Platform:      win32
+[debug] [2026-11-02T04:17:05.619Z] Node Version:  v24.14.0
+[debug] [2026-11-02T04:17:05.620Z] Time:          Mon Nov 02 2026 09:47:05 GMT+0530 (India Standard Time)
+[debug] [2026-11-02T04:17:05.620Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-11-02T04:17:10.860Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-11-02T04:17:10.861Z] > authorizing via signed-in user (patelvatsal2305@gmail.com)
+[debug] [2026-11-02T04:17:10.861Z] [iam] checking project vpatel-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-11-02T04:17:10.865Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:10.865Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:10.867Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vpatel-portfolio:testIamPermissions [none]
+[debug] [2026-11-02T04:17:10.867Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/vpatel-portfolio:testIamPermissions  x-goog-user-project=vpatel-portfolio
+[debug] [2026-11-02T04:17:10.868Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vpatel-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-02T04:17:12.493Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/vpatel-portfolio:testIamPermissions 200
+[debug] [2026-11-02T04:17:12.493Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vpatel-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-02T04:17:12.495Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:12.495Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:12.495Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vpatel-portfolio [none]
+[debug] [2026-11-02T04:17:13.485Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vpatel-portfolio 200
+[debug] [2026-11-02T04:17:13.485Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vpatel-portfolio {"projectId":"vpatel-portfolio","projectNumber":"751547967724","displayName":"vpatel-portfolio","name":"projects/vpatel-portfolio","resources":{"hostingSite":"vpatel-portfolio"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_f4c8014d-9d08-4af4-8a69-58dee4295de8"}
+[info] 
+[info] === Deploying to 'vpatel-portfolio'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-11-02T04:17:13.500Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:13.500Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:13.501Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vpatel-portfolio/versions [none]
+[debug] [2026-11-02T04:17:13.501Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vpatel-portfolio/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-11-02T04:17:15.533Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vpatel-portfolio/versions 200
+[debug] [2026-11-02T04:17:15.533Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vpatel-portfolio/versions {"name":"projects/751547967724/sites/vpatel-portfolio/versions/e2a07a00144f09ef","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[vpatel-portfolio]: beginning deploy... 
+[info] i  hosting[vpatel-portfolio]: found 5 files in Portfolio 
+[debug] [2026-11-02T04:17:15.565Z] [hosting] uploading with 200 concurrency
+[debug] [2026-11-02T04:17:15.580Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:15.580Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:15.582Z] [hosting] hash cache [UG9ydGZvbGlv] stored for 5 files
+[debug] [2026-11-02T04:17:15.582Z] [hosting][hash queue][FINAL] {"max":9,"min":1,"avg":3.8,"active":0,"complete":5,"success":5,"errored":0,"retried":0,"total":5,"elapsed":13}
+[debug] [2026-11-02T04:17:15.582Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/751547967724/sites/vpatel-portfolio/versions/e2a07a00144f09ef:populateFiles [none]
+[debug] [2026-11-02T04:17:15.583Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/751547967724/sites/vpatel-portfolio/versions/e2a07a00144f09ef:populateFiles {"files":{"/Vatsal-Patel-Resume.pdf":"f7c7ff8817c0346bbe99b0b05677690f3fd0911cf8f71815b513dea49a0e556e","/js/script.js":"975aebb1819426439f2d1f20cd084f18c0e3825377d4358bcc77511292d9734f","/assets/img/favicon.png":"2215405515cb53aeb37c35d75d1e2a4bbd0129b43ddc70941f3fd997a586b988","/index.html":"5aaeae27a8796c84f9fc1f3daf00e9bea02966d69d1c120703fa6ce13a60e1ea","/css/style.css":"75ca9e440e8ca77d00603c877eeaac34416fbf418d4db3a5b04138ada04974fa"}}
+[debug] [2026-11-02T04:17:16.532Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/751547967724/sites/vpatel-portfolio/versions/e2a07a00144f09ef:populateFiles 200
+[debug] [2026-11-02T04:17:16.532Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/751547967724/sites/vpatel-portfolio/versions/e2a07a00144f09ef:populateFiles {"uploadRequiredHashes":["5aaeae27a8796c84f9fc1f3daf00e9bea02966d69d1c120703fa6ce13a60e1ea","75ca9e440e8ca77d00603c877eeaac34416fbf418d4db3a5b04138ada04974fa"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/vpatel-portfolio/versions/e2a07a00144f09ef/files"}
+[debug] [2026-11-02T04:17:16.533Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:16.533Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:16.533Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:16.534Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:16.534Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vpatel-portfolio/versions/e2a07a00144f09ef/files/5aaeae27a8796c84f9fc1f3daf00e9bea02966d69d1c120703fa6ce13a60e1ea [none]
+[debug] [2026-11-02T04:17:16.534Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vpatel-portfolio/versions/e2a07a00144f09ef/files/5aaeae27a8796c84f9fc1f3daf00e9bea02966d69d1c120703fa6ce13a60e1ea [stream]
+[debug] [2026-11-02T04:17:16.536Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vpatel-portfolio/versions/e2a07a00144f09ef/files/75ca9e440e8ca77d00603c877eeaac34416fbf418d4db3a5b04138ada04974fa [none]
+[debug] [2026-11-02T04:17:16.536Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vpatel-portfolio/versions/e2a07a00144f09ef/files/75ca9e440e8ca77d00603c877eeaac34416fbf418d4db3a5b04138ada04974fa [stream]
+[debug] [2026-11-02T04:17:16.539Z] [hosting][populate queue][FINAL] {"max":955,"min":955,"avg":955,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":960}
+[debug] [2026-11-02T04:17:16.539Z] [hosting] uploads queued: 2
+[info] i  hosting: uploading new files [0/2] (0%) 
+[debug] [2026-11-02T04:17:18.281Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vpatel-portfolio/versions/e2a07a00144f09ef/files/75ca9e440e8ca77d00603c877eeaac34416fbf418d4db3a5b04138ada04974fa 200
+[debug] [2026-11-02T04:17:18.281Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vpatel-portfolio/versions/e2a07a00144f09ef/files/75ca9e440e8ca77d00603c877eeaac34416fbf418d4db3a5b04138ada04974fa [stream]
+[debug] [2026-11-02T04:17:18.473Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vpatel-portfolio/versions/e2a07a00144f09ef/files/5aaeae27a8796c84f9fc1f3daf00e9bea02966d69d1c120703fa6ce13a60e1ea 200
+[debug] [2026-11-02T04:17:18.473Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vpatel-portfolio/versions/e2a07a00144f09ef/files/5aaeae27a8796c84f9fc1f3daf00e9bea02966d69d1c120703fa6ce13a60e1ea [stream]
+[debug] [2026-11-02T04:17:18.473Z] [hosting][upload queue][FINAL] {"max":1941,"min":1748,"avg":1844.5,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":1941}
+[info] i  hosting: upload complete 
+[info] +  hosting[vpatel-portfolio]: file upload complete 
+[debug] [2026-11-02T04:17:18.474Z] [hosting] deploy completed after 2936ms
+[debug] [2026-11-02T04:17:18.475Z] [
+  {
+    "config": {
+      "public": "Portfolio",
+      "headers": [
+        {
+          "source": "**/*.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, max-age=0"
+            }
+          ]
+        },
+        {
+          "source": "/css/**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=3600"
+            }
+          ]
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "vpatel-portfolio"
+    },
+    "version": "projects/751547967724/sites/vpatel-portfolio/versions/e2a07a00144f09ef"
+  }
+]
+[info] i  hosting[vpatel-portfolio]: finalizing version... 
+[debug] [2026-11-02T04:17:18.478Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:18.478Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:18.478Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vpatel-portfolio/versions/e2a07a00144f09ef updateMask=status%2Cconfig
+[debug] [2026-11-02T04:17:18.478Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vpatel-portfolio/versions/e2a07a00144f09ef {"status":"FINALIZED","config":{"headers":[{"glob":"**/*.html","headers":{"Cache-Control":"no-cache, max-age=0"}},{"glob":"/css/**","headers":{"Cache-Control":"public, max-age=3600"}}]}}
+[debug] [2026-11-02T04:17:19.324Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vpatel-portfolio/versions/e2a07a00144f09ef 200
+[debug] [2026-11-02T04:17:19.324Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vpatel-portfolio/versions/e2a07a00144f09ef {"name":"projects/751547967724/sites/vpatel-portfolio/versions/e2a07a00144f09ef","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, max-age=0"},"glob":"**/*.html"},{"headers":{"Cache-Control":"public, max-age=3600"},"glob":"/css/**"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-02T04:17:14.716792Z","createUser":{"email":"patelvatsal2305@gmail.com"},"finalizeTime":"2026-11-02T04:17:19.151513Z","finalizeUser":{"email":"patelvatsal2305@gmail.com"}}
+[debug] [2026-11-02T04:17:19.324Z] [hosting] finalized version for vpatel-portfolio:[object Object]
+[info] +  hosting[vpatel-portfolio]: version finalized 
+[info] i  hosting[vpatel-portfolio]: releasing new version... 
+[debug] [2026-11-02T04:17:19.325Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:19.325Z] Checked if tokens are valid: true, expires at: 1793594039546
+[debug] [2026-11-02T04:17:19.325Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vpatel-portfolio/channels/live/releases versionName=projects%2F751547967724%2Fsites%2Fvpatel-portfolio%2Fversions%2Fe2a07a00144f09ef
+[debug] [2026-11-02T04:17:19.325Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vpatel-portfolio/channels/live/releases {}
+[debug] [2026-11-02T04:17:20.352Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vpatel-portfolio/channels/live/releases 200
+[debug] [2026-11-02T04:17:20.352Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vpatel-portfolio/channels/live/releases {"name":"projects/751547967724/sites/vpatel-portfolio/channels/live/releases/1793593039298000","version":{"name":"projects/751547967724/sites/vpatel-portfolio/versions/e2a07a00144f09ef","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, max-age=0"},"glob":"**/*.html"},{"headers":{"Cache-Control":"public, max-age=3600"},"glob":"/css/**"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-02T04:17:14.716792Z","createUser":{"email":"patelvatsal2305@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVnrFTqMp6EZduJeWTUAa8mdEZ5PuTUBUuxNazsKPCAMeqoj2Wa-g6ECCKV5hWq8LhSG-rG5GjHwQnaxZVf3KnwiZ5aJTIPnDExXLRFlIolBzoWFokF79jmq9ieEueC7AVjuHtIKSja8nEi9yKC7Cnocy0FWuc6r4oGbeO-kBG9ODI-PV-zXx-CjHaTRlUueJiDTTnYYGkOAebXOcAG4YC2YpZ2vQxWqKEEMOMcbl5TWEXjQG-cC9nZAGF5Ru2Li3I7Fkq0DyBJjEfOZoWst708m9aO6cSGOc-XY8naGH6oDLT-z93uduJbDiQMMhJ_tONcV-mA21REqBGxyasL8ZiCl9EtZ1RgoDjRtU4RdiSSXi_HMz9fesvqWB5BlZVpzZUzLQA6BDd72tyZu9eWL53DPoUw_OudcdtkCaNHNKpfbHVVYCqqbRLI06b2H0ywYAMNjSOMK4LTKu5ZGhU0_PiTZwMxdFRshjtxzuREuLb0Ha0CTq9JOMLeh5i_R_vsBiPsdwSilZj4I1dNvINJZqA1YaYzBrh2ab4OIp8_FMyHGxz58uCR9xZXKuoFfA3NcbnxxCibgsKKjH3v2sra3T3_DAIZUeI4HT7GwKk3tphUB02unDyGlykTcdg1ecyevNYQSsQESfhqZU6hVw9DywHLPN4FrrLBfqowJWEnIvKaqnLWdruwlxmPVp-Hz59onbEO814qqc20yV3P1_Veq9_Bm1PdUJmiGw7Wtijzgw-cqNmBLiSHTUus-JTx8byd7SjSB3HxrzVW5Ax5rpHqj_IahYfhzGsCOieFF50lMmZsuvk9b70v82BdUsWsP76b0DVVRc52tkb12OSBnp9ZD1k1SAIoIFv5El7WTY-L0V3LglhTjfo6OpF_mtiUHWU5h0wjBz1iXmC5L0bizfkG7Lwe3eHC4eApJ3Z47XgHHtMRVBp1drFWYdC_fdgQBzANM7skKay1pXJ9Dkvm2sILEgA2H1FWbOpJGIzty0j32_S3MBwr9klkK6ja5VWBNQoWZ8jUARZedYT7KXdqKmoyfDvZA2XpqwAqM-kxKDEKYCRUENoO0sBuxMc"},"finalizeTime":"2026-11-02T04:17:19.151513Z","finalizeUser":{"email":"patelvatsal2305@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVnrFTqMp6EZduJeWTUAa8mdEZ5PuTUBUuxNazsKPCAMeqoj2Wa-g6ECCKV5hWq8LhSG-rG5GjHwQnaxZVf3KnwiZ5aJTIPnDExXLRFlIolBzoWFokF79jmq9ieEueC7AVjuHtIKSja8nEi9yKC7Cnocy0FWuc6r4oGbeO-kBG9ODI-PV-zXx-CjHaTRlUueJiDTTnYYGkOAebXOcAG4YC2YpZ2vQxWqKEEMOMcbl5TWEXjQG-cC9nZAGF5Ru2Li3I7Fkq0DyBJjEfOZoWst708m9aO6cSGOc-XY8naGH6oDLT-z93uduJbDiQMMhJ_tONcV-mA21REqBGxyasL8ZiCl9EtZ1RgoDjRtU4RdiSSXi_HMz9fesvqWB5BlZVpzZUzLQA6BDd72tyZu9eWL53DPoUw_OudcdtkCaNHNKpfbHVVYCqqbRLI06b2H0ywYAMNjSOMK4LTKu5ZGhU0_PiTZwMxdFRshjtxzuREuLb0Ha0CTq9JOMLeh5i_R_vsBiPsdwSilZj4I1dNvINJZqA1YaYzBrh2ab4OIp8_FMyHGxz58uCR9xZXKuoFfA3NcbnxxCibgsKKjH3v2sra3T3_DAIZUeI4HT7GwKk3tphUB02unDyGlykTcdg1ecyevNYQSsQESfhqZU6hVw9DywHLPN4FrrLBfqowJWEnIvKaqnLWdruwlxmPVp-Hz59onbEO814qqc20yV3P1_Veq9_Bm1PdUJmiGw7Wtijzgw-cqNmBLiSHTUus-JTx8byd7SjSB3HxrzVW5Ax5rpHqj_IahYfhzGsCOieFF50lMmZsuvk9b70v82BdUsWsP76b0DVVRc52tkb12OSBnp9ZD1k1SAIoIFv5El7WTY-L0V3LglhTjfo6OpF_mtiUHWU5h0wjBz1iXmC5L0bizfkG7Lwe3eHC4eApJ3Z47XgHHtMRVBp1drFWYdC_fdgQBzANM7skKay1pXJ9Dkvm2sILEgA2H1FWbOpJGIzty0j32_S3MBwr9klkK6ja5VWBNQoWZ8jUARZedYT7KXdqKmoyfDvZA2XpqwAqM-kxKDEKYCRUENoO0sBuxMc"}},"type":"DEPLOY","releaseTime":"2026-11-02T04:17:19.298Z","releaseUser":{"email":"patelvatsal2305@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVnrFTqMp6EZduJeWTUAa8mdEZ5PuTUBUuxNazsKPCAMeqoj2Wa-g6ECCKV5hWq8LhSG-rG5GjHwQnaxZVf3KnwiZ5aJTIPnDExXLRFlIolBzoWFokF79jmq9ieEueC7AVjuHtIKSja8nEi9yKC7Cnocy0FWuc6r4oGbeO-kBG9ODI-PV-zXx-CjHaTRlUueJiDTTnYYGkOAebXOcAG4YC2YpZ2vQxWqKEEMOMcbl5TWEXjQG-cC9nZAGF5Ru2Li3I7Fkq0DyBJjEfOZoWst708m9aO6cSGOc-XY8naGH6oDLT-z93uduJbDiQMMhJ_tONcV-mA21REqBGxyasL8ZiCl9EtZ1RgoDjRtU4RdiSSXi_HMz9fesvqWB5BlZVpzZUzLQA6BDd72tyZu9eWL53DPoUw_OudcdtkCaNHNKpfbHVVYCqqbRLI06b2H0ywYAMNjSOMK4LTKu5ZGhU0_PiTZwMxdFRshjtxzuREuLb0Ha0CTq9JOMLeh5i_R_vsBiPsdwSilZj4I1dNvINJZqA1YaYzBrh2ab4OIp8_FMyHGxz58uCR9xZXKuoFfA3NcbnxxCibgsKKjH3v2sra3T3_DAIZUeI4HT7GwKk3tphUB02unDyGlykTcdg1ecyevNYQSsQESfhqZU6hVw9DywHLPN4FrrLBfqowJWEnIvKaqnLWdruwlxmPVp-Hz59onbEO814qqc20yV3P1_Veq9_Bm1PdUJmiGw7Wtijzgw-cqNmBLiSHTUus-JTx8byd7SjSB3HxrzVW5Ax5rpHqj_IahYfhzGsCOieFF50lMmZsuvk9b70v82BdUsWsP76b0DVVRc52tkb12OSBnp9ZD1k1SAIoIFv5El7WTY-L0V3LglhTjfo6OpF_mtiUHWU5h0wjBz1iXmC5L0bizfkG7Lwe3eHC4eApJ3Z47XgHHtMRVBp1drFWYdC_fdgQBzANM7skKay1pXJ9Dkvm2sILEgA2H1FWbOpJGIzty0j32_S3MBwr9klkK6ja5VWBNQoWZ8jUARZedYT7KXdqKmoyfDvZA2XpqwAqM-kxKDEKYCRUENoO0sBuxMc"}}
+[debug] [2026-11-02T04:17:20.353Z] [hosting] release: {"name":"projects/751547967724/sites/vpatel-portfolio/channels/live/releases/1793593039298000","version":{"name":"projects/751547967724/sites/vpatel-portfolio/versions/e2a07a00144f09ef","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, max-age=0"},"glob":"**/*.html"},{"headers":{"Cache-Control":"public, max-age=3600"},"glob":"/css/**"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-02T04:17:14.716792Z","createUser":{"email":"patelvatsal2305@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVnrFTqMp6EZduJeWTUAa8mdEZ5PuTUBUuxNazsKPCAMeqoj2Wa-g6ECCKV5hWq8LhSG-rG5GjHwQnaxZVf3KnwiZ5aJTIPnDExXLRFlIolBzoWFokF79jmq9ieEueC7AVjuHtIKSja8nEi9yKC7Cnocy0FWuc6r4oGbeO-kBG9ODI-PV-zXx-CjHaTRlUueJiDTTnYYGkOAebXOcAG4YC2YpZ2vQxWqKEEMOMcbl5TWEXjQG-cC9nZAGF5Ru2Li3I7Fkq0DyBJjEfOZoWst708m9aO6cSGOc-XY8naGH6oDLT-z93uduJbDiQMMhJ_tONcV-mA21REqBGxyasL8ZiCl9EtZ1RgoDjRtU4RdiSSXi_HMz9fesvqWB5BlZVpzZUzLQA6BDd72tyZu9eWL53DPoUw_OudcdtkCaNHNKpfbHVVYCqqbRLI06b2H0ywYAMNjSOMK4LTKu5ZGhU0_PiTZwMxdFRshjtxzuREuLb0Ha0CTq9JOMLeh5i_R_vsBiPsdwSilZj4I1dNvINJZqA1YaYzBrh2ab4OIp8_FMyHGxz58uCR9xZXKuoFfA3NcbnxxCibgsKKjH3v2sra3T3_DAIZUeI4HT7GwKk3tphUB02unDyGlykTcdg1ecyevNYQSsQESfhqZU6hVw9DywHLPN4FrrLBfqowJWEnIvKaqnLWdruwlxmPVp-Hz59onbEO814qqc20yV3P1_Veq9_Bm1PdUJmiGw7Wtijzgw-cqNmBLiSHTUus-JTx8byd7SjSB3HxrzVW5Ax5rpHqj_IahYfhzGsCOieFF50lMmZsuvk9b70v82BdUsWsP76b0DVVRc52tkb12OSBnp9ZD1k1SAIoIFv5El7WTY-L0V3LglhTjfo6OpF_mtiUHWU5h0wjBz1iXmC5L0bizfkG7Lwe3eHC4eApJ3Z47XgHHtMRVBp1drFWYdC_fdgQBzANM7skKay1pXJ9Dkvm2sILEgA2H1FWbOpJGIzty0j32_S3MBwr9klkK6ja5VWBNQoWZ8jUARZedYT7KXdqKmoyfDvZA2XpqwAqM-kxKDEKYCRUENoO0sBuxMc"},"finalizeTime":"2026-11-02T04:17:19.151513Z","finalizeUser":{"email":"patelvatsal2305@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVnrFTqMp6EZduJeWTUAa8mdEZ5PuTUBUuxNazsKPCAMeqoj2Wa-g6ECCKV5hWq8LhSG-rG5GjHwQnaxZVf3KnwiZ5aJTIPnDExXLRFlIolBzoWFokF79jmq9ieEueC7AVjuHtIKSja8nEi9yKC7Cnocy0FWuc6r4oGbeO-kBG9ODI-PV-zXx-CjHaTRlUueJiDTTnYYGkOAebXOcAG4YC2YpZ2vQxWqKEEMOMcbl5TWEXjQG-cC9nZAGF5Ru2Li3I7Fkq0DyBJjEfOZoWst708m9aO6cSGOc-XY8naGH6oDLT-z93uduJbDiQMMhJ_tONcV-mA21REqBGxyasL8ZiCl9EtZ1RgoDjRtU4RdiSSXi_HMz9fesvqWB5BlZVpzZUzLQA6BDd72tyZu9eWL53DPoUw_OudcdtkCaNHNKpfbHVVYCqqbRLI06b2H0ywYAMNjSOMK4LTKu5ZGhU0_PiTZwMxdFRshjtxzuREuLb0Ha0CTq9JOMLeh5i_R_vsBiPsdwSilZj4I1dNvINJZqA1YaYzBrh2ab4OIp8_FMyHGxz58uCR9xZXKuoFfA3NcbnxxCibgsKKjH3v2sra3T3_DAIZUeI4HT7GwKk3tphUB02unDyGlykTcdg1ecyevNYQSsQESfhqZU6hVw9DywHLPN4FrrLBfqowJWEnIvKaqnLWdruwlxmPVp-Hz59onbEO814qqc20yV3P1_Veq9_Bm1PdUJmiGw7Wtijzgw-cqNmBLiSHTUus-JTx8byd7SjSB3HxrzVW5Ax5rpHqj_IahYfhzGsCOieFF50lMmZsuvk9b70v82BdUsWsP76b0DVVRc52tkb12OSBnp9ZD1k1SAIoIFv5El7WTY-L0V3LglhTjfo6OpF_mtiUHWU5h0wjBz1iXmC5L0bizfkG7Lwe3eHC4eApJ3Z47XgHHtMRVBp1drFWYdC_fdgQBzANM7skKay1pXJ9Dkvm2sILEgA2H1FWbOpJGIzty0j32_S3MBwr9klkK6ja5VWBNQoWZ8jUARZedYT7KXdqKmoyfDvZA2XpqwAqM-kxKDEKYCRUENoO0sBuxMc"}},"type":"DEPLOY","releaseTime":"2026-11-02T04:17:19.298Z","releaseUser":{"email":"patelvatsal2305@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVnrFTqMp6EZduJeWTUAa8mdEZ5PuTUBUuxNazsKPCAMeqoj2Wa-g6ECCKV5hWq8LhSG-rG5GjHwQnaxZVf3KnwiZ5aJTIPnDExXLRFlIolBzoWFokF79jmq9ieEueC7AVjuHtIKSja8nEi9yKC7Cnocy0FWuc6r4oGbeO-kBG9ODI-PV-zXx-CjHaTRlUueJiDTTnYYGkOAebXOcAG4YC2YpZ2vQxWqKEEMOMcbl5TWEXjQG-cC9nZAGF5Ru2Li3I7Fkq0DyBJjEfOZoWst708m9aO6cSGOc-XY8naGH6oDLT-z93uduJbDiQMMhJ_tONcV-mA21REqBGxyasL8ZiCl9EtZ1RgoDjRtU4RdiSSXi_HMz9fesvqWB5BlZVpzZUzLQA6BDd72tyZu9eWL53DPoUw_OudcdtkCaNHNKpfbHVVYCqqbRLI06b2H0ywYAMNjSOMK4LTKu5ZGhU0_PiTZwMxdFRshjtxzuREuLb0Ha0CTq9JOMLeh5i_R_vsBiPsdwSilZj4I1dNvINJZqA1YaYzBrh2ab4OIp8_FMyHGxz58uCR9xZXKuoFfA3NcbnxxCibgsKKjH3v2sra3T3_DAIZUeI4HT7GwKk3tphUB02unDyGlykTcdg1ecyevNYQSsQESfhqZU6hVw9DywHLPN4FrrLBfqowJWEnIvKaqnLWdruwlxmPVp-Hz59onbEO814qqc20yV3P1_Veq9_Bm1PdUJmiGw7Wtijzgw-cqNmBLiSHTUus-JTx8byd7SjSB3HxrzVW5Ax5rpHqj_IahYfhzGsCOieFF50lMmZsuvk9b70v82BdUsWsP76b0DVVRc52tkb12OSBnp9ZD1k1SAIoIFv5El7WTY-L0V3LglhTjfo6OpF_mtiUHWU5h0wjBz1iXmC5L0bizfkG7Lwe3eHC4eApJ3Z47XgHHtMRVBp1drFWYdC_fdgQBzANM7skKay1pXJ9Dkvm2sILEgA2H1FWbOpJGIzty0j32_S3MBwr9klkK6ja5VWBNQoWZ8jUARZedYT7KXdqKmoyfDvZA2XpqwAqM-kxKDEKYCRUENoO0sBuxMc"}}
+[info] +  hosting[vpatel-portfolio]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/vpatel-portfolio/overview
+[info] Hosting URL: https://vpatel-portfolio.web.app
+[debug] [2026-11-02T04:17:26.046Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Vatsal\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:308:49)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+[error] 
+[error] Error: An unexpected error has occurred.
